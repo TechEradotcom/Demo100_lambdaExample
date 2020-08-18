@@ -1,0 +1,6 @@
+Imagining the interface 
+imagine abstract method of it
+and write the Lambda
+directly
+(ParamterList)->{body}
+https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html

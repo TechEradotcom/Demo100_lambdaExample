@@ -1,0 +1,56 @@
+1 Print details of all the products:
+2 Print Details of the Product having price greater than or equal to 30000f
+
+3 Collect the details of the product having price greater than or equal to 30000f
+	in list
+	in Set
+
+		Trainee Practice:
+		----------------	
+		3  Collect the details of the product having o in their name
+			in list
+			in Set
+ 
+4 From List of Products get the List Of id,name separately
+	
+	TRainee Practice:
+	------------------
+	From List of Products get the List Of price separately map
+
+5
+ Find Sum     of price [Hint: use mapTODouble] /use collector API 
+ Find Average  price [Hint: use mapTODouble]   /use collector API
+ Find Maximum    price [Hint: use mapTODouble]  /use collector API / Map
+ Find Minimum     price [Hint: use mapTODouble]  /use collector API / Map
+ 
+ 6
+ Find count of products have distinct price
+ 
+ 
+7
+	Find the product that has Maximum price [Hint: use map] /collector API
+	
+	trainee practice:
+	--------------------
+    Find the product that has minimum price[Hint: use map] /collector API
+    toDouble will not be great here..
+ 
+
+8 
+Collect the details of the product having name starting with I as map, id should be key
+and value shuld be name of the product
+
+
+
+	
+Collect the details of the product having price greater than 30000f as map, id should be key
+and value shuld be name of the product (duplicasy problem :):)...)
+	
+	
+9 Group  the products by productType
+
+
+
+trainee practice:
+--------------------
+	Find count of products that have maximum price

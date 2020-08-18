@@ -1,0 +1,81 @@
+Print Elements:
+Filter Odd Elements
+Collect Even Elements as Set
+Display Maximum using:
+	Stream API
+	CollectorAPI
+	Map
+	MapToInt API
+	
+//Stream is not functional till we get the terminal operations
+//foreach
+//collect
+
+
+//Four ways to find max
+package com.accenture.lkm.example.practice;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import com.lkm.accenture.Product1;
+import com.lkm.accenture.ProductUtility;
+
+public class Tester9 {
+	
+	public static void main(String[] args) {
+		List<Integer> list1= new ArrayList<Integer>();
+		
+		list1.add(12);list1.add(2);list1.add(7);
+		list1.add(13);list1.add(6);list1.add(154);
+		
+		//First way
+		list1.stream().max((o1,o2)->{
+			int ret=0;
+			if(o1>o2){
+				ret=1;
+			}else{
+				ret=-1;
+			}
+			return ret;
+		}).get();
+		
+		
+		//2nd Way
+		list1.stream().collect(Collectors.maxBy((o1,o2)->{
+			int ret=0;
+			if(o1>o2){
+				ret=1;
+			}else{
+				ret=-1;
+			}
+			return ret;
+		})).get();
+		
+		//using Map
+		list1.stream().map(x->x).max((o1,o2)->{
+			int ret=0;
+			if(o1>o2){
+				ret=1;
+			}else{
+				ret=-1;
+			}
+			return ret;
+		}).get();
+		
+		//Using Specific Fuctions
+		list1.stream().mapToInt(x->x).max().getAsInt();
+		
+		
+	}
+
+}
+// Max example
+
+
+
+Flat Map Example
+
+Finding the product that has maximum price
